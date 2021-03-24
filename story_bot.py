@@ -32,13 +32,14 @@ def page_target(num):
 
 
 if __name__ == "__main__":
-    content_target = 'http://www.shuhai.com/book/55051.htm'
+    content_target = 'http://www.shuhai.com/read/101468/34.html'
     response = request.urlopen(content_target)
     html = response.read()
     html = html.decode("gbk")
     print(html)
     for i in range(1, 5):
-        print(json.dumps(chapter(page_target(i))))
+       pass
+    # print(json.dumps(chapter(page_target(i))))
 
 
 
