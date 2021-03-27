@@ -7,6 +7,7 @@ import os
 # comic website scrapy
 # https://images.dmzj1.com/img/chapterpic/3059/14237/14395217739069.jpg
 
+
 def comic_chapter(charpter_num, url):
     print(url)
     response = request.urlopen(url)
