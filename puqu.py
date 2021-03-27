@@ -5,7 +5,7 @@ import re
 from urllib.request import urlretrieve
 import os
 from http import cookiejar
-import ua
+import proxy
 # comic website scrapy
 # https://images.dmzj1.com/img/chapterpic/3059/14237/14395217739069.jpg
 
@@ -44,7 +44,7 @@ def page_target(cur, chapter, num):
 
 
 if __name__ == "__main__":
-    ua.set_proxy_and_test({'http':'218.60.8.99:3129','http':'61.220.204.25:3128',
+    proxy.set_proxy_and_test({'http': '218.60.8.99:3129', 'http': '61.220.204.25:3128',
            'http':'61.178.149.237:59042',
         'http':'220.174.236.211:8091',
            'http': '183.195.106.118:8118',
@@ -70,17 +70,6 @@ if __name__ == "__main__":
     for a in contents:
         print('http://www.qupu123.com'+a.get('href'))
         print(a.get('title'))
-    # lists = contents.find_all("a")
-    # chapters = []
-    # print(contents)
-    # for comic in lists:
-    #     href = comic.get('href')
-    #     name = comic.text
-    #     chapters.insert(0, {'name': name, 'href': href})
-    # print(json.dumps(chapters))
-    # # comic_chapter(0, chapters[0]['href'])
-    # for chap in chapters[46:]:
-    #     comic_chapter(chap['name'], chap['href'])
 
 
 

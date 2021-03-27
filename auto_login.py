@@ -21,8 +21,8 @@ if __name__ == "__main__":
     driver.implicitly_wait(5)
     driver.get(login_url)
     # assert "Python" in driver.title
-    user_name = '淘金itj'
-    passwd = 'tbtbztb219'
+    user_name = '淘金'
+    passwd = 'xxxxxx'
     # time.sleep(5)
     # driver.find_element_by_xpath('//*[@id="module-YrEpAzATZ"]/div/div[1]/div[1]').click()
     # time.sleep(5)

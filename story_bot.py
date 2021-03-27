@@ -17,7 +17,7 @@ def chapter(url):
     print(ts)
     auth = ''
     for author_info in author_infos:
-        auth += author_info.text.replace('\n','')
+        auth += author_info.text.replace('\n', '')
     print(auth)
     content = []
     for line in txts:
